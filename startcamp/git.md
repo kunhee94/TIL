@@ -10,17 +10,16 @@ __git init__ 깃으로 관리 시작
 
 - 작업공간( working directory)
 
-   __git add__를 통해 다음 파트
+   - git add를 통해 다음 파트
 
 - staging area (확인,검수)
 
-   __git commit__를 통해 다음 파트
+   - git commit를 통해 다음 파트
 
 - local repository
 
-   ​	__git push__를 통해서 remote repo에 올림
-
-   (git push -u origin master)
+   - git push를 통해서 remote repo에 올림
+  - (git push -u origin master)
 
 
 
