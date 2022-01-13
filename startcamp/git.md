@@ -35,7 +35,7 @@ __untracked__: 처음으로 관리되는 대상
 
 __tracked__: 관리되고 있는 대상
 
-- 처음관리되는 대상이면서 staging area에 올라가면 녹색으로 new
+- 처음관리되는 대상이면서 staging area에 올라가면 녹색으로 new file
 
 - __modified__: 관리중인데 수정된 대상
 - __unmodified__
