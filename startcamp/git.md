@@ -18,6 +18,10 @@ __git init__ 깃으로 관리 시작
 
 - local repository
 
+   ​	__git push__를 통해서 remote repo에 올림
+
+   (git push -u origin master)
+
 
 
 ### 깃의 상태
@@ -34,7 +38,7 @@ __tracked__: 관리되고 있는 대상
 - 처음관리되는 대상이면서 staging area에 올라가면 녹색으로 new
 
 - __modified__: 관리중인데 수정된 대상
-- unmodified
+- __unmodified__
 
 
 
