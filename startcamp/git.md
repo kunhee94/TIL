@@ -35,3 +35,7 @@ __tracked__: 관리되고 있는 대상
 
 - __modified__: 관리중인데 수정된 대상
 - unmodified
+
+
+
+![image-20220113160322382](git.assets/image-20220113160322382.png)
