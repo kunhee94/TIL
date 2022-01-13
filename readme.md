@@ -6,7 +6,7 @@
 
 ​	2.[마크다운사용](./startcamp/마크다운.md)
 
-​	3.[git사용](./startcamp/git.md)
+​	3.[git기초](./startcamp/git.md)
 
 
 
