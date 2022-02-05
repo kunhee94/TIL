@@ -12,6 +12,14 @@
 
 ​	3.[git기초](./startcamp/git.md)
 
+​	4.[Python_base](./selfstudy/파이썬 기초 정리.md)
+
+​	5.[Web_base](./selfsudy/Web.md)
+
+
+
+
+
 
 
 ​	
