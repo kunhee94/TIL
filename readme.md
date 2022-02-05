@@ -10,7 +10,7 @@
 
 ​	4.[Python_base](./selfstudy/파이썬_기초_정리.md)
 
-​	5.[Web_base](./selfsudy/Web.md)
+​	5.[Web_base](./selfstudy/Web.md)
 
 
 
