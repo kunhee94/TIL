@@ -186,6 +186,52 @@
     - RGB 색상 - 16진수 표기번 혹은 함수령 표기법을 사용, 특정 색 표현
     - HSL 색상 - 색상, 채도 ,명도를 통해 특정 색을 표현(page122)
 
+---
+
+- Box model
+  - 모든 요소는 네모(박스모델)이고, 위에서부터 아래로, 왼쪽에서 오른쪽으로 쌓인다.
+  - 하나의 박스는 다음 네 부분으로 이루어짐
+    - content, padding, border, margin
+  - margin
+    - 10px(상하좌우)
+    - 10px 20px(상하10 좌우 20)
+    - 10px 20px 30px(상10 중20 하30)
+    - 10px 20px 30px 40px(상10우20하30좌40(시계방향))
+  - box-sizing
+    - 기본적으로 모든 요소의 box-sizing은 content-box
+    - Padding을 제외한 순수 contents 영역만을 box로 지정
+    - box-sizing을 border-sizing으로 지정하면 편함
+
+---
+
+- CSS Display
+  - `display: block`  
+    - 줄바꿈이 일어나는 요소
+    - 화면 크기 전체의 가로 폭을 차지
+    - 블로 요소안에 인라인 요소 들어갈 수 있음
+  - `dispaly: inline` 줄바꿈이 일어나지 않는 행의 일부 요소
+    - content너비만큼 가로폭을 차지
+    - 상하여백은 `line-height`로 지정한다.
+    - 원래 인라인 요소는 width,height이런거 못하지만 img는 가능
+
+---
+
+- CSS position
+  - 문서 상에서 요소의 위치를 지정
+  - static: 모든 태그의 기본 값
+  - relative, absolute, fixed를 통해서 이동 가능
+  - `relative`
+    - 상대위치
+    - 자기자신의 static위치를 기준으로 이동 (이동후 공간 여전히 차지)
+  - `absolute` 
+    - 절대 위치
+    - static이 아닌 가장 가까이 있는 부모/조상 요소를 기준으로 이동(없는 경우 body)
+    - 이동 후 공간 차지 없음
+  - `fixed` 
+    - 고정위치
+    - 요소를 일반적인 문서흐름에서 제거 후 레이아웃에 공간 차지 x
+    - viewport기준으로 이동(스크롤 시에도 항상 같은 곳에 위치)
+
 
 
 
