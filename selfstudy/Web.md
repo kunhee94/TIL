@@ -232,15 +232,66 @@
     - 요소를 일반적인 문서흐름에서 제거 후 레이아웃에 공간 차지 x
     - viewport기준으로 이동(스크롤 시에도 항상 같은 곳에 위치)
 
+---
 
+### CSS Layout
 
+- __Float__
 
+  - 박스를 왼쪽 혹은 오른쪽으로 이동시켜 텍스트를 포함 인라인요소들이 주변을 wrarpping 하도록 함
+  - 요소가 Normal flow를 벗어나도록 함
 
+- Flat 속성
 
+  - `none` 기본값
+  - `left` 요소를 왼쪽으로 띄움
+  - `right` 요소를 오른쪽으로 띄움
 
+- clearfix
 
+  - float 요소의 부모로 div를 주고 부모에게 .clearfix
 
+    ```htm
+    .clearfix :: after {			
+    	content:"";
+    	display: block;
+    	clear:both;
+    }
+    ```
 
+- __Flexible Box Layout__
+
+  - 행과 열 형태로 아이템들을 배치하는 1차원 레이아웃 모델
+
+  - (수동 값 부여 없이) 수직정렬 가능
+
+  - 아이템의 너비와 높이 혹은 간격을 동일하게 배치
+
+  - 축
+
+    - main axis (메인 축)
+    - cross axis (교차 축)
+
+  - 구성 요소
+
+    - Flex Container (부모요소)
+      - flexbox 레이아웃을 형성하는 가장 기본적인 모델
+      - display속성을 flex로 지정
+    - Flex Item (자식 요소)
+
+  - flex-direction
+
+    - 메인 축 기준 방향 설정
+
+    ![image-20220207101043509](Web.assets/image-20220207101043509.png)
+
+  - flex-wrap
+
+    - 아이템이 컨테이너를 벗어나는 경우 해당 영역 내에 배치되도록 설정
+
+      ![image-20220207101629955](Web.assets/image-20220207101629955.png)
+
+  - 
 
 
 
