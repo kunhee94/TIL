@@ -241,7 +241,7 @@
   - 박스를 왼쪽 혹은 오른쪽으로 이동시켜 텍스트를 포함 인라인요소들이 주변을 wrarpping 하도록 함
   - 요소가 Normal flow를 벗어나도록 함
 
-- Flat 속성
+- Float 속성
 
   - `none` 기본값
   - `left` 요소를 왼쪽으로 띄움
@@ -291,7 +291,44 @@
 
       ![image-20220207101629955](Web.assets/image-20220207101629955.png)
 
-  - 
+  - flex-flow
+  
+    - direction과 wrap의 숏핸드
+  
+  - justify-content
+  
+    - 메인 축 기준으로 공간 배분
+  
+    ![image-20220213162112929](Web.assets/image-20220213162112929.png)
+  
+  - align-items
+  
+    - 크로스 축 기준으로 정렬
+  
+    ![image-20220213162319735](Web.assets/image-20220213162319735.png)
+  
+  - align-self
+  
+    - 개별 아이템에 크로스 축 기준으로 정렬
+  
+  - 기타속성
+  
+    - flex-grow: 남은 영역을 아이템에 분배
+    - flex-order: 배치 순서 (0이 최우선 순위임)
+
+---
+
+### Bootstrap
+
+- spacing
+
+  ![image-20220213162609583](Web.assets/image-20220213162609583.png)
+
+- Grid system
+
+  - container(필수 아님 양쪽 공간 이쁘라고 하는거)
+  - row (부모 박스 필수)
+  - col (자식 박스 부모 박스에서 얼마나 크기를 차지 할지 결정)
 
 
 
