@@ -162,7 +162,69 @@ print()
 
 ### 문자열
 
+- __브루트포스__
 
+```python
+p = input()		# 찾을 패턴
+txt = input()	# 확인해야할 문자열
+
+len_p = len(p)
+len_txt = len(txt)
+
+i = 0
+j = 0
+cnt = 0		# 패턴 나온 횟수
+while i < len_txt:	# 문자열 끝까지 순회 할거임 
+    if txt[i] != p[j]:	# 만약 문자열과 패턴이 다르면
+        i -= j	# 패턴을 살펴본만큼 다시 뒤로간다
+        j = -1	# 패턴도 다시 처음부터 확인해야하니까(밑에서 +1해주면 다시 패턴도 맨첨으로 돌아감)
+    i += 1	# 방금 확인한 인덱스에서 한칸이동
+    j += 1	# 마찬가지
+    if j == len_p:	# 만약 패턴을 다순회했는데 j가 0이 아니라면
+        cnt += 1	# 패턴이 1개 발견되었다는 뜻이니 cnt+1
+        j = 0		# 그뒤에 다시 패턴을 확인해야하니 패턴 인덱스 초기화
+```
+
+- KMP(대충 무슨 소린지는 알겠으나 나중에 다시 파이썬 튜터로 해보면서 공부)
+
+```python
+pattern = input()
+word = input()
+#LPS테이블 만들기
+# 패턴의 테이블 생성
+
+len_p = len(pattern)
+tb = [0 for _ in range(len_p)]  # 정보 저장용 테이블
+
+j = 0  # 테이블의 값을 불러오고, 패턴의 인덱스에 접근
+for i in range(1, len_p):  # 테이블에 값 저장하기 위해 활용하는 인덱스
+    # j가 0이 되거나, idx와 j의 pattern 접근 값이 같아질때까지 진행
+    while j > 0 and pattern[i] != pattern[j]:
+        j = tb[j - 1]
+
+    # 값이 일치하는 경우, j 1 증가시키고 그 값을 tb에 저장
+    if pattern[i] == pattern[j]:
+        j += 1
+        tb[i] = j
+################################
+#KMP로 패턴 나온횟수 체크하기
+table = tb
+
+cnt = 0
+pidx = 0
+
+for idx in range(len(word)):
+    while pidx > 0 and word[idx] != pattern[pidx]:
+        pidx = table[pidx - 1]
+
+    if word[idx] == pattern[pidx]:
+        if pidx == len(pattern) - 1:
+            cnt += 1
+            pidx = table[pidx]
+        else:
+            pidx += 1
+print(results)
+```
 
 
 
