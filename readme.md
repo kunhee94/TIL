@@ -12,6 +12,8 @@
 
 ​	5.[Web_base](./selfstudy/Web.md)
 
+​	6..[Algorithm](./selfstudy/ALGORITHM.md)
+
 
 
 
