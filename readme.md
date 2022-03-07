@@ -12,9 +12,9 @@
 
 ​	5.[Web_base](./selfstudy/Web.md)
 
-​	6..[Algorithm](./selfstudy/ALGORITHM.md)
+​	6.[Algorithm](./selfstudy/ALGORITHM.md)
 
-
+​	7.[Django](./selfstudy/Django.md)	
 
 
 
