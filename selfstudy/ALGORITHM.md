@@ -544,27 +544,6 @@ def quick(a, begin, end):
 - 탐색 시작점의 인접한 정점들을 모두 차례로 방문한 후에, 방문했던 정점을 시작점으로하여 다시 인접한 정점들을 차례로 방문
 - 큐를 활용
 
----
-
-### 2점사이의 각도 구하기
-
-```python
-def find_angle(x1, y1, x2, y2):
-    rad_angle = 0.0
-    dx = x2 - x1
-    dy = y2 - y1
-    rad_angle = math.atan2(dx, dy)
-    result = (rad_angle * 180) / math.pi
-    if result >= 0:
-        return result
-    else:
-        return 360 + result
-
-print(find_angle(0, 0, 1, 1))
-```
-
-
-
 
 
 

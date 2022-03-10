@@ -62,6 +62,7 @@ __깃으로 관리할 때 venv말고 이걸로 만든 파일을 올린다__
   - 서버로부터 정보를 조회하는 데 사용
   - 데이터를 가져올 때만 사용
   - 데이터를 서버로 전송할 때 body가 아닌 Query String Parameters를 통해 전송
+- POST사용할 때는 `{% csrf_token %}` 무조건 작성
 
 ---
 
@@ -166,6 +167,7 @@ __ORM__
   - `sqlmigrate`
     - 마이그레이션에 대한 SQL 구문을 보기 위해 사용
     - 마이그레이션이 SQL문으로 어떻게 해석되어서 동작할지 미리 확인 가능
+    - `python manage.py sqlmigrate 앱이름 설계도번호`
   - `showmigrations`
   - 프로젝트 전체의 마이그레이션 상태를 확인하기 위해 사용
   - 마이그레이션 파일들이 migrate 되었는지 여부를 확인 가능
@@ -235,6 +237,10 @@ __DB API 구문__
 from .models import Student
 admin.site.register(Student)
 ```
+
+---
+
+### 
 
 
 
