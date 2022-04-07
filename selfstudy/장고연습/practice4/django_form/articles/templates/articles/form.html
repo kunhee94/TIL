@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+<h1>{{ title }}</h1>
+<hr>
+<form action="" method="POST">
+  {% csrf_token %}
+  {%bootstrap_form form%}
+  {% comment %} {{ form.as_p }} {% endcomment %}
+  <button>{{send_btn}}</button>
+</form>
+{% if title == 'CREATE' %}
+  <a href="{% url 'articles:index' %}">Back</a>
+{% else %}
+  <a href="{% url 'articles:detail' article.pk %}">Back</a>
+{% endif %}
+{% endblock content %}

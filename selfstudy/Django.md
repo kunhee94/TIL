@@ -240,7 +240,16 @@ admin.site.register(Student)
 
 ---
 
+### Django's forms
 
+- form은 django의 유효성 검사 도구 중 하나로 외부의 악의적 공격 및 데이터 손상에 중요한 방어수단
+  - 렌더링을 위한 데이터 준비 및 재구성
+  - 데이터에 대한 HTML forms생성
+  - 클라이언트로부터 받은 데이터 수신 및 처리
+
+- Form rendering options
+  - as_p()
+    - 각 필드가 단락(p태그)으로 감싸져서 렌더링 됨
 
 
 
