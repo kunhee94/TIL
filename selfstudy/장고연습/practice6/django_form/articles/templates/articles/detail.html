@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>DETAIL</h1>
+<a href="{% url 'articles:index' %}">BACK</a>
+<hr>
+<p>글 번호 : {{ article.pk }}</p>
+<p>제목 : {{ article.title }}</p>
+<p>내용 : {{ article.content }}</p>
+<p>글 생성 시간 : {{ article.created_at }}</p>
+<p>글 수정 시간 : {{ article.updated_at }}</p>
+<hr>
+{% for comment in comments %}
+  {{comment.content}}
+  <form action="{% url 'articles:comments_delete' article.pk comment.pk %}"method='POST'>
+    {% csrf_token %}
+    <input type="submit"value='댓글삭제'>
+  </form>
+  <br>
+{% endfor %}
+
+<form action="{% url 'articles:comments_create' article.pk %}" method='POST'>
+  {% csrf_token %}
+  {{comment_form}}
+  <input type="submit" value="댓글작성">
+</form>
+
+
+<a href="{% url 'articles:update' article.pk %}">EDIT</a>
+<form action="{% url 'articles:delete' article.pk %}" method="POST">
+  {% csrf_token %}
+  <button>DELETE</button>
+</form>
+{% endblock content %}
