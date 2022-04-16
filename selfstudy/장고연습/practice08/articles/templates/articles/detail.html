@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>DETAIL</h1>
+<a href="{% url 'articles:index' %}">BACK</a>
+<br>
+{{article.title}}
+<br>
+{{article.issue_a}} {{red_per}}
+<br>
+{{article.issue_b}} {{blue_per}}
+<hr>
+<h3>댓글작성</h3>
+<form action="{% url 'articles:comment_create' article.pk %}"method='POST'>
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value='작성'>
+</form>
+<hr>
+<h3>댓글 목록</h3>
+{% for comment in comments %}
+  <p>{{comment.content}}</p>
+  {{comment.pick}}
+  <hr>
+{% endfor %}
+
+
+{% endblock content %}

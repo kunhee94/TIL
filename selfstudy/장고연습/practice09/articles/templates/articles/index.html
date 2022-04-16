@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Index</h1>
+<a href="{% url 'articles:new' %}">글작성</a>
+{% for article in articles %}
+<h1>할일:{{article.title}}</h1>
+<br>
+작성자: {{article.author_id}}
+<br>
+완료여부: {{article.complete}}
+{% endfor %}
+
+{% endblock content %}

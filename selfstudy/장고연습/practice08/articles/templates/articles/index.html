@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Either Game</h1>
+<br>
+<a href="{% url 'articles:create' %}">새 게임 만들기</a>
+<hr>
+{% for article in articles %}
+  <p>{{article.title}}</p>
+  <a href="{% url 'articles:detail' article.pk %}">PLAY</a>
+  <hr>
+{% endfor %}
+
+{% endblock content %}
