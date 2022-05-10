@@ -266,9 +266,17 @@ const name = function(arg) {
 
 ---
 
-### social login
+### SFC
 
-- django allauth
+- Vue의 컴포넌트 기반 개발의 핵심 특징
+- 하나의 컴포넌트는 .vue 확장자를 가진 하나의 파일 안에서 작성되는 코드의 결과물
+
+- Component
+  - 기본 HTML 엘리먼트를 확장하여 재사용 가능한 코드를 캡슐화 하는데 도움을 줌
+
+- Vue 컴포넌트는 const app = new Vue({})의 app을 의미하며 이는 Vue 인스턴스
+  - 컴포넌트 기반의 개발이 반드시 파일 단위로 구분되어야 하는 것은 아님
+  - 단일 .html 파일 안에서도 여러 개의 컴포넌트를 만들어 개발 가능
 
 
 
