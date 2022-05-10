@@ -36,7 +36,7 @@ export default {
     searchData(keyword){
       console.log(keyword)
       const API_URL = 'https://www.googleapis.com/youtube/v3/search'
-      const API_KEY = 'AIzaSyAmCiwBXQvB4HMH-zSJvWxe7Qe5nwhvIoo'
+      const API_KEY = 'my_api_key'
       axios({
         method: 'get',
         url: API_URL,
