@@ -16,7 +16,7 @@
 
 ​	7.[Django](./selfstudy/Django.md)	
 
-​	8.[JavaScript](./selfstudy/JavaScript.md)	
+​	8.[JavaScript](./selfstudy/JavaScript.md)	 
 
 
 
