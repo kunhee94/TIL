@@ -27,7 +27,7 @@ __깃으로 관리할 때 venv말고 이걸로 만든 파일을 올린다__
 
 ---
 
-### Template
+### Template  
 
 - 데이터 표현을 제어하는 도구이자 표현에 관련된 로직
 - Django Template Language(DTL)
